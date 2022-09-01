@@ -1,7 +1,7 @@
 ﻿// 55  Дан целочисленный массив. 
 //Найти среднее арифметическое каждого из столбцов.
 int sum = 0;
-int[,] arr = Create2DArray(3, 3);
+int[,] arr = Create2DArray(3, 4);
 PrintArray2D(arr);
 for (int i = 0; i < arr.GetLength(1); i++)
 {
@@ -9,7 +9,7 @@ for (int i = 0; i < arr.GetLength(1); i++)
     {
         sum = sum + arr[j, i];
     }
-    int srznach = sum/arr.GetLength(1);
+    int srznach = sum/arr.GetLength(0);
     Console.WriteLine(srznach);
     sum=0;
 }
